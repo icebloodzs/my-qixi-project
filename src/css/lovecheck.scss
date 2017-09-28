@@ -1,0 +1,269 @@
+@import "./public/reset.scss";
+@import "./public/style.scss";
+// 开发pc时请使用 pcStyle.scss 开发移动站点时请使用style.scss
+.clear{
+    clear: both;
+}
+//start
+body{
+    background: #fffafa;
+}
+.page{
+    width: rem(750);
+    margin: 0 auto;
+    padding-bottom: rem(50);
+    .page-top{
+        padding: rem(25) rem(25) 0;
+        display: flex;
+        justify-content: space-between;
+        .page-top-leftlogo{
+            width: rem(156);
+            height: rem(35);
+            @include bg_fn(url("../img/sdfsdfsfdfsd24.png"), no-repeat, center, cover);
+        }
+        .page-top-middletext{
+            width: rem(174);
+            height: rem(26);
+            @include bg_fn(url("../img/sfsf234sdfsd.png"), no-repeat, center, cover);
+        }
+        .page-top-rightnum{
+            width: rem(129);
+            height: rem(19);
+            margin-top: rem(4);
+            @include bg_fn(url("../img/NO.5211314_49.png"), no-repeat, center, cover);
+        }
+    }
+    .page-paymentinfo{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(25) rem(25) 0;
+        .page-draweeinfo{
+            display: flex;
+            .page-draweebgimg{
+                width: rem(67);
+                height: rem(18);
+                @include bg_fn(url("../img/sdf23sdf.png"), no-repeat, center, cover);
+            }
+            .page-draweename{
+                padding-left: rem(15);
+                @include font_text();
+                line-height: 1;
+            }
+        }
+        .page-datepayment{
+            margin-top: rem(8);
+            width: rem(98);
+            height: rem(19);
+            @include bg_fn(url("../img/dfdsf24dsfsd.png"), no-repeat, center, cover);
+        }
+    }
+    .app_header_jiage{
+        overflow: hidden;
+        .app_header_jiage_con{
+          margin-top: rem(30);
+          float: right;
+          width: rem(722);
+          height: rem(65);
+          @include bg_fn(url("../img/rmb_51.png"), no-repeat, center, cover);
+          .app_header_jiage_con_left{
+            flex: 70;
+          }
+          .app_header_jiage_con_right{
+            animation-duration: 1.5s;
+            animation-iteration-count:infinite;
+            flex: 652;
+            @include font_small_head();
+            padding-left: rem(95);
+            line-height: 1.3;
+          }
+        }
+      }
+      .app_middle_con_heart{
+       
+        position: relative;
+        display: flex;
+        padding: rem(40) 0;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .app_middle_con_heart_con{
+
+            width: rem(259);
+            height: rem(28);
+            @include bg_fn(url("../img/sdfsdf234sdf.png"), no-repeat, center, cover);
+            &.bottom{
+                margin-bottom: rem(20);
+            }
+        }
+        .app_middle_con_heart_con_qin{
+            position: absolute;
+            width: rem(125);
+            height: rem(84);
+            top: rem(65);
+            left: rem(250);
+            z-index: 2;
+            opacity: .8;
+            @include bg_fn(url("../img/fdsf234df.png"), no-repeat, center, cover);
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    }
+    
+    .app_middle_con_yuan{
+        padding-top: rem(10);
+        .app_middle_con_yuan_con{
+            display: flex;
+            justify-content: space-around;
+            .app_middle_con_yuan_con_li{
+                width: rem(12);
+                height: rem(12);
+                border-radius: 50%;
+                background: #ccc;
+                opacity: .2;  
+            }
+        }
+        
+    }
+    .app_middle_con_title1{
+        width: rem(145);
+        height: rem(21);
+        @include bg_fn(url("../img/sdfsdf234sdfsd.png"), no-repeat, center, cover);
+        margin: rem(25) auto rem(20);
+    }
+    .app_middle_con_nubm{
+        width: rem(105);
+        height: rem(15);
+        @include bg_fn(url("../img/NO.5211314_49.png"), no-repeat, center, cover);
+        margin: 0 auto;
+    }
+    .app_middle_con_logo{
+        width: rem(158);
+        height: rem(151);
+        @include bg_fn(url("../img/dfsdf23sdf.png"), no-repeat, center, cover);
+        margin: rem(30) auto rem(10);
+    }
+    .app_middle_con_fkr{
+        display: flex;
+        justify-content: center;
+        .app_middle_con_fkpeople{
+            width: rem(77);
+            height: rem(21);
+            @include bg_fn(url("../img/fgs234dsf.png"), no-repeat, center, cover);
+        }
+        .app_middle_con_fkr_con{
+            padding-top:  rem(3);
+            padding-left: rem(15);
+            @include font_text();
+            line-height: 1;
+        }
+    }
+    .app_middle_con_fjxx{
+        width: rem(280);
+        height: rem(23);
+        margin: rem(25) auto rem(20);
+        @include bg_fn(url("../img/adfaf34df.png"), no-repeat, center, cover);
+    }
+    .app_middle_con_message{
+        width: rem(400);
+        @include font_text();
+        color: #444;
+        line-height: 2;
+        letter-spacing: 5px;
+        font-weight: 200;
+        margin: 0 auto;
+    }
+    .page-footerimg{
+        margin: 0 auto;
+        width: rem(400);
+        overflow: hidden;
+        .page-footerimg-left{
+            float: left;
+            width: rem(84);
+            height: rem(115);
+            margin: rem(15) auto 0;
+            @include bg_fn(url("../img/adfa234dsf.png"), no-repeat, center, cover);
+        }
+        .page-footerimg-right{
+            display: flex;
+            justify-content: flex-start;
+            float: right;
+            padding-top: rem(70);
+            .page-footerimg-payee{
+                width: rem(67);
+                height: rem(18);
+                @include bg_fn(url("../img/sdfssdf24sdf.png"), no-repeat, center, cover);
+            }
+            .page-footerimg-name{
+                padding-left: rem(15);
+                @include font_text();
+                line-height: 1;
+            }
+        }
+    }
+    .page-operationimg{
+        padding-top: rem(10);
+        display: flex;
+        justify-content:space-between;
+        a{
+            display: block;
+        }
+        .page-operationimgl{
+            margin-top: rem(2);
+            width: rem(134);
+            height: rem(62);
+            @include bg_fn(url("../img/dsfd234sdf.png"), no-repeat, center, cover);   
+        }
+        .page-operationimgleft{
+            width: rem(212);
+            height: rem(67);
+            @include bg_fn(url("../img/dfsdfsd234fd.png"), no-repeat, center, cover); 
+        }
+        .page-operationimgm{
+            width: rem(36);
+            height: rem(62);
+            @include bg_fn(url("../img/sdf23rsdf.png"), no-repeat, center, cover);
+        }
+        .page-operationimgright{
+            width: rem(212);
+            height: rem(67);
+            @include bg_fn(url("../img/dfsdf234dsfsdf.png"), no-repeat, center, cover);
+        }
+        .page-operationimgr{
+            margin-top: rem(2);
+            width: rem(137);
+            height: rem(62);
+            @include bg_fn(url("../img/adfaf234dsf.png"), no-repeat, center, cover);
+        }
+    }
+    .page-knowzhongyuanbank{
+        display: block;
+        width: rem(175);
+        height: rem(41);
+        margin: rem(40) auto 0;
+        @include bg_fn(url("../img/sdf234dsfd.png"), no-repeat, center, cover);
+        cursor: pointer;
+    }   
+}
+.sharelove{
+    position: fixed;
+    background: rgba(0,0,0,.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    &.hide{
+        z-index: -10;
+        opacity: 0;
+    }
+    .sharelovebgimg{
+        position: absolute;
+        width: rem(467);
+        height: rem(519);
+        z-index: 11;
+        top: rem(50);
+        right: rem(80);
+        @include bg_fn(url("../img/sfdsfsdfdsf234wfdsf.png"), no-repeat, center, cover); 
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+    }
+}

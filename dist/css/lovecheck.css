@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, lengend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0; }
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 "Microsoft YaHei" , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */ }
+
+h1 {
+  font-size: 18px;
+  /* 18px / 12px = 1.5 */ }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 14px; }
+
+h4, h5, h6 {
+  font-size: 100%; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+/* 将斜体扶正 */
+code, kbd, pre, samp, tt {
+  font-family: "Microsoft YaHei", Courier, monospace; }
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px; }
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul, ol {
+  list-style: none; }
+
+/* 重置文本格式元素 */
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+abbr[title], acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+q:before, q:after {
+  content: ''; }
+
+/* 重置表单元素 */
+legend {
+  color: #000; }
+
+/* for ie6 */
+fieldset, img {
+  border: none; }
+
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */ }
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px; }
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fffafa; }
+
+.page {
+  width: 10rem;
+  margin: 0 auto;
+  padding-bottom: 0.66667rem; }
+  .page .page-top {
+    padding: 0.33333rem 0.33333rem 0;
+    display: flex;
+    justify-content: space-between; }
+    .page .page-top .page-top-leftlogo {
+      width: 2.08rem;
+      height: 0.46667rem;
+      background-image: url("../img/sdfsdfsfdfsd24.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-top .page-top-middletext {
+      width: 2.32rem;
+      height: 0.34667rem;
+      background-image: url("../img/sfsf234sdfsd.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-top .page-top-rightnum {
+      width: 1.72rem;
+      height: 0.25333rem;
+      margin-top: 0.05333rem;
+      background-image: url("../img/NO.5211314_49.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .page .page-paymentinfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.33333rem 0.33333rem 0; }
+    .page .page-paymentinfo .page-draweeinfo {
+      display: flex; }
+      .page .page-paymentinfo .page-draweeinfo .page-draweebgimg {
+        width: 0.89333rem;
+        height: 0.24rem;
+        background-image: url("../img/sdf23sdf.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .page .page-paymentinfo .page-draweeinfo .page-draweename {
+        padding-left: 0.2rem;
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        line-height: 1; }
+    .page .page-paymentinfo .page-datepayment {
+      margin-top: 0.10667rem;
+      width: 1.30667rem;
+      height: 0.25333rem;
+      background-image: url("../img/dfdsf24dsfsd.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .page .app_header_jiage {
+    overflow: hidden; }
+    .page .app_header_jiage .app_header_jiage_con {
+      margin-top: 0.4rem;
+      float: right;
+      width: 9.62667rem;
+      height: 0.86667rem;
+      background-image: url("../img/rmb_51.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .page .app_header_jiage .app_header_jiage_con .app_header_jiage_con_left {
+        flex: 70; }
+      .page .app_header_jiage .app_header_jiage_con .app_header_jiage_con_right {
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        flex: 652;
+        font-size: 0.66667rem;
+        font-weight: 400;
+        color: #444;
+        line-height: 1.5;
+        padding-left: 1.26667rem;
+        line-height: 1.3; }
+  .page .app_middle_con_heart {
+    position: relative;
+    display: flex;
+    padding: 0.53333rem 0;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .page .app_middle_con_heart .app_middle_con_heart_con {
+      width: 3.45333rem;
+      height: 0.37333rem;
+      background-image: url("../img/sdfsdf234sdf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .page .app_middle_con_heart .app_middle_con_heart_con.bottom {
+        margin-bottom: 0.26667rem; }
+    .page .app_middle_con_heart .app_middle_con_heart_con_qin {
+      position: absolute;
+      width: 1.66667rem;
+      height: 1.12rem;
+      top: 0.86667rem;
+      left: 3.33333rem;
+      z-index: 2;
+      opacity: .8;
+      background-image: url("../img/fdsf234df.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; }
+  .page .app_middle_con_yuan {
+    padding-top: 0.13333rem; }
+    .page .app_middle_con_yuan .app_middle_con_yuan_con {
+      display: flex;
+      justify-content: space-around; }
+      .page .app_middle_con_yuan .app_middle_con_yuan_con .app_middle_con_yuan_con_li {
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 50%;
+        background: #ccc;
+        opacity: .2; }
+  .page .app_middle_con_title1 {
+    width: 1.93333rem;
+    height: 0.28rem;
+    background-image: url("../img/sdfsdf234sdfsd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.33333rem auto 0.26667rem; }
+  .page .app_middle_con_nubm {
+    width: 1.4rem;
+    height: 0.2rem;
+    background-image: url("../img/NO.5211314_49.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto; }
+  .page .app_middle_con_logo {
+    width: 2.10667rem;
+    height: 2.01333rem;
+    background-image: url("../img/dfsdf23sdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.4rem auto 0.13333rem; }
+  .page .app_middle_con_fkr {
+    display: flex;
+    justify-content: center; }
+    .page .app_middle_con_fkr .app_middle_con_fkpeople {
+      width: 1.02667rem;
+      height: 0.28rem;
+      background-image: url("../img/fgs234dsf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .app_middle_con_fkr .app_middle_con_fkr_con {
+      padding-top: 0.04rem;
+      padding-left: 0.2rem;
+      font-size: 0.26667rem;
+      font-weight: 400;
+      color: #666666;
+      line-height: 1.5;
+      line-height: 1; }
+  .page .app_middle_con_fjxx {
+    width: 3.73333rem;
+    height: 0.30667rem;
+    margin: 0.33333rem auto 0.26667rem;
+    background-image: url("../img/adfaf34df.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .page .app_middle_con_message {
+    width: 5.33333rem;
+    font-size: 0.26667rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.5;
+    color: #444;
+    line-height: 2;
+    letter-spacing: 5px;
+    font-weight: 200;
+    margin: 0 auto; }
+  .page .page-footerimg {
+    margin: 0 auto;
+    width: 5.33333rem;
+    overflow: hidden; }
+    .page .page-footerimg .page-footerimg-left {
+      float: left;
+      width: 1.12rem;
+      height: 1.53333rem;
+      margin: 0.2rem auto 0;
+      background-image: url("../img/adfa234dsf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-footerimg .page-footerimg-right {
+      display: flex;
+      justify-content: flex-start;
+      float: right;
+      padding-top: 0.93333rem; }
+      .page .page-footerimg .page-footerimg-right .page-footerimg-payee {
+        width: 0.89333rem;
+        height: 0.24rem;
+        background-image: url("../img/sdfssdf24sdf.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .page .page-footerimg .page-footerimg-right .page-footerimg-name {
+        padding-left: 0.2rem;
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        line-height: 1; }
+  .page .page-operationimg {
+    padding-top: 0.13333rem;
+    display: flex;
+    justify-content: space-between; }
+    .page .page-operationimg a {
+      display: block; }
+    .page .page-operationimg .page-operationimgl {
+      margin-top: 0.02667rem;
+      width: 1.78667rem;
+      height: 0.82667rem;
+      background-image: url("../img/dsfd234sdf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-operationimg .page-operationimgleft {
+      width: 2.82667rem;
+      height: 0.89333rem;
+      background-image: url("../img/dfsdfsd234fd.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-operationimg .page-operationimgm {
+      width: 0.48rem;
+      height: 0.82667rem;
+      background-image: url("../img/sdf23rsdf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-operationimg .page-operationimgright {
+      width: 2.82667rem;
+      height: 0.89333rem;
+      background-image: url("../img/dfsdf234dsfsdf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .page .page-operationimg .page-operationimgr {
+      margin-top: 0.02667rem;
+      width: 1.82667rem;
+      height: 0.82667rem;
+      background-image: url("../img/adfaf234dsf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .page .page-knowzhongyuanbank {
+    display: block;
+    width: 2.33333rem;
+    height: 0.54667rem;
+    margin: 0.53333rem auto 0;
+    background-image: url("../img/sdf234dsfd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer; }
+
+.sharelove {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10; }
+  .sharelove.hide {
+    z-index: -10;
+    opacity: 0; }
+  .sharelove .sharelovebgimg {
+    position: absolute;
+    width: 6.22667rem;
+    height: 6.92rem;
+    z-index: 11;
+    top: 0.66667rem;
+    right: 1.06667rem;
+    background-image: url("../img/sfdsfsdfdsf234wfdsf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-duration: .6s;
+    animation-iteration-count: infinite; }

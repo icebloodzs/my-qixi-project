@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   @@include('header.inc')
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/writecheck.css">
+</head>
+<body>
+    <div class="page">
+        <div class="page-logo animated pulse"></div>
+        <div class="page-title animated swing"></div>
+        <div class="page-upload">
+            <div class="page-upload-img show"></div>
+        </div>
+        <div class="page-upload-tex"></div>
+        <div class="page-upload-text">上传头像</div>
+        <div class="page-upload-textsub">天王盖地虎</div>
+        <div class="page-payee">
+            <label for="page-payeename" class="page-payee-bgimg"></label>
+            <input type="text" placeholder="请输入收款人姓名" class="page-payee-nameinput"/>
+        </div>
+        <div class="page-check">
+            <label for="page-checklimit" class="page-checklimit-bgimg"></label>
+            <input type="text" placeholder="5211314" class="page-check-limitinput"/>
+        </div>
+        <div class="page-text">
+            <label for="page-textarea" class="page-text-subtilte"></label>
+            <textarea  id="page-textarea" class="page-text-textarea  maxlength="50" onchange="this.value=this.value.substring(0, 50)" onkeydown="this.value=this.value.substring(0, 50)" onkeyup="this.value=this.value.substring(0, 50)" ">我今生最大的愿望就是：天天和你在同个盆儿里洗脚，平淡到老，老到我们哪儿也去不了.</textarea>
+            <div class="page-text-changeit">换一条看看</div>
+        </div>
+        <div class="page-wordrestriction"></div>
+        <div class="page-lovecheck">
+                <div class="page-lovecheck-leftbgimg"></div>
+                <a href="/app/lovecheck.html" class="page-lovecheck-middlebgimg animated  shake"></a>
+                <div class="page-lovecheck-rightbgimg"></div>
+        </div>
+        <a class="page-knowzhongyuanbank"></a>
+    </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

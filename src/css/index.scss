@@ -1,0 +1,239 @@
+@import "./public/reset.scss";
+@import "./public/style.scss";
+//pc端 使用pcstyle.scss   移动端使用style.scss
+
+//start
+.clear{
+    clear: both;
+}   
+body{
+    background: #fffafa;
+}   
+.app{
+    width: rem(750);
+    margin: 0 auto;
+    padding-bottom: rem(50);
+    .app_con{
+        .app_head{
+            width: rem(283);
+            height: rem(279);
+            margin: rem(30) auto rem(20);
+            @include bg_fn(url("../img/dfsdf234sdfsd.png"), no-repeat, center, cover);
+        }
+        .app_middle{
+             padding: rem(20) rem(60);
+            .app_middle_con{
+                overflow: hidden;
+                border: 1px solid #ff9393;
+                border-radius: rem(20);
+                padding: rem(15) 0 rem(20);
+                .app_middle_con_top{
+                    margin-left: rem(17);
+                    width: rem(610);
+                    height: rem(55);
+                    @include bg_fn(url("../img/rmb_51.png"), no-repeat, center, cover);
+                    .app_middle_con_top_con{
+                    @include font_small_head();
+                    padding-left: rem(75);
+                    line-height: 1.4;
+                    font-size: rem(42);
+                   }
+                }
+                .app_middle_con_heart{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    padding: rem(40) 0;
+                    flex-wrap: wrap;
+                    justify-content:space-around;
+                    .app_middle_con_heart_con{
+                        width: rem(219);
+                        height: rem(24);
+                        @include bg_fn(url("../img/sdfsdf234sdf.png"), no-repeat, center, cover);
+                        &.bottom{
+                            margin-bottom: rem(20);
+                        }
+                    }
+                }
+                .app_middle_con_heart_con_qin{
+                    position: absolute;
+                    width: rem(125);
+                    height: rem(84);
+                    top: rem(65);
+                    left: rem(190);
+                    z-index: 2;
+                    opacity: .8;
+                    @include bg_fn(url("../img/fdsf234df.png"), no-repeat, center, cover);
+                    animation-duration: 1s;    //动画持续时间
+                    animation-delay: 1s;    //动画延迟时间
+                    animation-iteration-count: 10;    //动画执行次数
+                }
+                .app_middle_con_yuan{
+                    padding-top: rem(10);
+                    .app_middle_con_yuan_con{
+                        display: flex;
+                        justify-content: space-around;
+                        .app_middle_con_yuan_con_li{
+                            width: rem(12);
+                            height: rem(12);
+                            border-radius: 50%;
+                            background: #ccc;
+                            opacity: .2;  
+                        }
+                    }
+                    
+                }
+                .app_middle_con_title1{
+                    width: rem(145);
+                    height: rem(21);
+                    @include bg_fn(url("../img/sdfsdf234sdfsd.png"), no-repeat, center, cover);
+                    margin: rem(25) auto rem(20);
+                }
+                .app_middle_con_nubm{
+                    width: rem(105);
+                    height: rem(15);
+                    @include bg_fn(url("../img/NO.5211314_49.png"), no-repeat, center, cover);
+                    margin: 0 auto;
+                }
+                .app_middle_con_logo{
+                    width: rem(158);
+                    height: rem(151);
+                    @include bg_fn(url("../img/logo.png"), no-repeat, center, cover);
+                    margin: rem(30) auto rem(10);
+                }
+                .app_middle_con_fkr{
+                    display: flex;
+                    justify-content: center;
+                    .app_middle_con_fkpeople{
+                        width: rem(77);
+                        height: rem(21);
+                        @include bg_fn(url("../img/fgs234dsf.png"), no-repeat, center, cover);
+                    }
+                    .app_middle_con_fkr_con{
+                        padding-top:  rem(3);
+                        padding-left: rem(15);
+                        @include font_text();
+                        line-height: 1;
+                    }
+                }
+                .app_middle_con_fjxx{
+                    width: rem(280);
+                    height: rem(23);
+                    margin: rem(25) auto rem(20);
+                    @include bg_fn(url("../img/adfaf34df.png"), no-repeat, center, cover);
+                }
+                .app_middle_con_message{
+                    width: rem(400);
+                    @include font_text();
+                    color: #444;
+                    line-height: 2;
+                    letter-spacing: 5px;
+                    font-weight: 200;
+                    margin: 0 auto;
+                }
+            }
+        }
+       .app_qkzp{
+           display: flex;
+           justify-content: space-around;
+           padding-top: rem(30);
+            .app_qkzp_left{
+            margin-top: rem(3);
+            width: rem(220);
+            height: rem(62);
+            @include bg_fn(url("../img/sfgfsd345sdfgsfg.png"), no-repeat, center, cover);
+          }
+           .app_qkzp_con{
+            display: block;
+            width: rem(272);
+            height: rem(67);
+            @include bg_fn(url("../img/sg3ssdfd.png"), no-repeat, center, cover);
+            animation-duration: 1s;    //动画持续时间
+            animation-delay: 1s;    //动画延迟时间
+            animation-iteration-count: 2;    //动画执行次数
+           }
+           .app_qkzp_right{
+            margin-top: rem(3);
+            width: rem(220);
+            height: rem(62);
+            @include bg_fn(url("../img/sfdgsd345fsgsfg.png"), no-repeat, center, cover);
+            }
+       }
+       .app_hdsm{
+           display: block;
+           width: rem(172);
+           height: rem(41);
+           margin: rem(40) auto 0;
+           @include bg_fn(url("../img/wdfsdf234sdfsdf.png"), no-repeat, center, cover);
+       }
+    }
+    .app_fixedBox{
+        position: fixed;
+        background: rgba(0,0,0,.6);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -10;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        &.show{
+          z-index: 10;
+          opacity: 1;
+        }
+        .app_fixedBox_con{
+            width: rem(600);
+            height: rem(700);
+            border-radius: rem(10);
+            background: #fff;
+            padding-top: rem(30);
+            .app_fixedBox_yxwf{
+                @include font_text();
+                text-align: center;
+                color: #000;
+                font-size: rem(36);
+                padding-top: rem(50); 
+            }
+            .app_fixedBox_yxwf_con{
+                @include font_text();
+                color: #666;
+                font-size: rem(24);
+                text-align: center;
+                padding-top: rem(20);
+            }
+            .app_fixedBox_mzsm{
+                text-align: center;
+                color: #000;
+                font-size: rem(36);
+                padding-top: rem(50);
+            }
+            .app_fixedBox_mzsm_con{
+                @include font_text();
+                color: #666;
+                font-size: rem(24);
+                text-align: center;
+                padding-top: rem(20);
+            }
+            .app_fixedBox_ok{
+                cursor: pointer;
+                @include font_text();
+                color: #fff;
+                background: #ff9393;
+                text-align: center;
+                width: rem(355);
+                height: (75);
+                line-height: rem(75);
+                font-size: rem(24);
+                margin: rem(150) auto 0;
+                border-radius: rem(20);
+                border: none;
+                outline: none;
+            }
+        }
+    }
+   
+    
+}

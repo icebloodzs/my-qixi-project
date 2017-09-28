@@ -1,0 +1,201 @@
+@import "./public/reset.scss";
+@import "./public/style.scss";
+// 开发pc时请使用 pcStyle.scss 开发移动站点时请使用style.scss
+.clear{
+    clear: both;
+}
+//start
+body{
+    background: #fffafa;
+}
+.page{
+    width: rem(750);
+    margin: 0 auto;
+    padding-bottom: rem(50);
+    padding-top: rem(50);
+    .page-logo{
+        width: rem(231);
+        height: rem(53);
+        margin: 0 auto;
+        @include bg_fn(url("../img/sfdf234dsd.png"), no-repeat, center, cover);
+        animation-duration: 1s;    //动画持续时间
+        animation-delay: 1s;    //动画延迟时间
+        animation-iteration-count: 20;    //动画执行次数
+    }
+    .page-title{
+        width: rem(374);
+        height: rem(27);
+        margin: rem(40) auto 0;
+        @include bg_fn(url("../img/sdfdsf234sdfsdf.png"), no-repeat, center, cover);
+        animation-iteration-count: 2;    //动画执行次数
+    }
+    .page-upload{
+        display: none;
+        width: rem(125);
+        height:  rem(125);
+        margin:  rem(40) auto 0;
+        border: rem(1) solid #e7a6a6;
+        border-radius: 50%;
+        &.show{
+            display: block;
+        }
+        .page-upload-img{
+            width: rem(35);
+            height: rem(35);
+            margin: rem(44) auto 0;
+            @include bg_fn(url("../img/adf234adf.png"), no-repeat, center, cover);
+        }
+    }
+    .page-upload-tex{
+        display: none;
+        width: rem(200);
+        height: rem(200);
+        margin: rem(30) auto rem(0);
+        background: #000;
+        &.show{
+          display: block;
+        }
+    }
+    .page-upload-text{
+        text-align: center;
+        padding-top: rem(15);
+        @include font_small_head();
+        font-size: rem(24);
+        line-height: 2;
+        color: #000;
+    }
+    .page-upload-textsub{
+        text-align: center;
+        @include font_small_head();
+        color: #666;
+        font-size: rem(24);
+        line-height: 1;
+    }
+    .page-payee{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: rem(30) 0 rem(15);
+        .page-payee-bgimg{
+            display: block;
+            width: rem(116);
+            height: rem(21);
+            margin-left: rem(53);
+            margin-right: rem(20);
+            @include bg_fn(url("../img/sdgfs34sgsfg.png"), no-repeat, center, cover);
+        }
+        .page-payee-nameinput{
+            display: block;
+            width: rem(365);
+            height: rem(75);
+            border: 1px solid #e7a6a6;
+            border-radius: rem(100);
+            outline: none;
+            text-align: center;
+            background-color: rgba(255,255,255,0);
+        }
+    }
+    .page-check{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: rem(30) 0 rem(15);
+        .page-checklimit-bgimg{
+            display: block;
+            width: rem(91);
+            height: rem(22);
+            margin-left: rem(73);
+            margin-right: rem(20);
+            @include bg_fn(url("../img/sdfsdf23sdfsd.png"), no-repeat, center, cover);
+        }
+        .page-check-limitinput{
+            display: block;
+            width: rem(365);
+            height: rem(75);
+            border: 1px solid #e7a6a6;
+            border-radius: rem(100);
+            outline: none;
+            text-align: center;
+            background-color: rgba(255,255,255,0);
+        }
+    }
+    .page-text{
+        position: relative;
+        .page-text-subtilte{
+            display: block;
+            width: rem(308);
+            height: rem(21);
+            margin: rem(20) auto rem(20);
+            @include bg_fn(url("../img/sdfsf34wfsdfsdf.png"), no-repeat, center, cover);
+        }
+        .page-text-textarea{
+            display: block;
+            outline: none;
+            width: rem(570);
+            height: rem(260);
+            margin: 0 auto;
+            padding: rem(25) rem(50);
+            line-height: 1.5;
+            letter-spacing: rem(5);
+            border: 1px solid #e7a6a6;
+            border-radius: rem(40);
+            background: rgba(0,0,0,0);
+            color: #888;
+            overflow: auto;
+            resize: none;
+        }
+        .page-text-changeit{
+            position: absolute;
+            top: rem(260);
+            right: rem(230);
+            text-align: center;
+            width: rem(275);
+            height: rem(75);
+            font-size: rem(24);
+            line-height: rem(75);
+            color: #fff;
+            background: #ff9393; 
+            border-radius: rem(15);
+            cursor: pointer;
+        }
+    }
+    .page-wordrestriction{
+        width: rem(125);
+        height: rem(22);
+        margin: rem(20) auto rem(40);
+        @include bg_fn(url("../img/dfsdf234sdfsdf.png"), no-repeat, center, cover);
+    }
+    .page-lovecheck{
+        display: flex;
+        justify-content: space-around;
+        padding-top: rem(2);
+        .page-lovecheck-leftbgimg{
+            margin-top: rem(3);
+            width: rem(220);
+            height: rem(62);
+            @include bg_fn(url("../img/sfgfsd345sdfgsfg.png"), no-repeat, center, cover);
+       }
+        .page-lovecheck-middlebgimg{
+            display: block;
+            width: rem(272);
+            height: rem(67);
+            @include bg_fn(url("../img/sdfsd234sdfsdf.png"), no-repeat, center, cover);
+            animation-iteration-count: 2;
+        }
+        .page-lovecheck-rightbgimg{
+            margin-top: rem(3);
+            width: rem(220);
+            height: rem(62);
+            @include bg_fn(url("../img/sfdgsd345fsgsfg.png"), no-repeat, center, cover);
+        }
+    }
+    .page-knowzhongyuanbank{
+        display: block;
+        width: rem(175);
+        height: rem(41);
+        margin: rem(40) auto 0;
+        @include bg_fn(url("../img/sdf234dsfd.png"), no-repeat, center, cover);
+        cursor: pointer;
+    }   
+}
+

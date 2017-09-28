@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, lengend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0; }
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 "Microsoft YaHei" , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */ }
+
+h1 {
+  font-size: 18px;
+  /* 18px / 12px = 1.5 */ }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 14px; }
+
+h4, h5, h6 {
+  font-size: 100%; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+/* 将斜体扶正 */
+code, kbd, pre, samp, tt {
+  font-family: "Microsoft YaHei", Courier, monospace; }
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px; }
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul, ol {
+  list-style: none; }
+
+/* 重置文本格式元素 */
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+abbr[title], acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+q:before, q:after {
+  content: ''; }
+
+/* 重置表单元素 */
+legend {
+  color: #000; }
+
+/* for ie6 */
+fieldset, img {
+  border: none; }
+
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */ }
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px; }
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fffafa; }
+
+.app {
+  width: 10rem;
+  margin: 0 auto;
+  padding-bottom: 0.66667rem; }
+  .app .app_con .app_head {
+    width: 3.77333rem;
+    height: 3.72rem;
+    margin: 0.4rem auto 0.26667rem;
+    background-image: url("../img/dfsdf234sdfsd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .app .app_con .app_middle {
+    padding: 0.26667rem 0.8rem; }
+    .app .app_con .app_middle .app_middle_con {
+      overflow: hidden;
+      border: 1px solid #ff9393;
+      border-radius: 0.26667rem;
+      padding: 0.2rem 0 0.26667rem; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_top {
+        margin-left: 0.22667rem;
+        width: 8.13333rem;
+        height: 0.73333rem;
+        background-image: url("../img/rmb_51.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        .app .app_con .app_middle .app_middle_con .app_middle_con_top .app_middle_con_top_con {
+          font-size: 0.66667rem;
+          font-weight: 400;
+          color: #444;
+          line-height: 1.5;
+          padding-left: 1rem;
+          line-height: 1.4;
+          font-size: 0.56rem; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_heart {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 0.53333rem 0;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        .app .app_con .app_middle .app_middle_con .app_middle_con_heart .app_middle_con_heart_con {
+          width: 2.92rem;
+          height: 0.32rem;
+          background-image: url("../img/sdfsdf234sdf.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+          .app .app_con .app_middle .app_middle_con .app_middle_con_heart .app_middle_con_heart_con.bottom {
+            margin-bottom: 0.26667rem; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_heart_con_qin {
+        position: absolute;
+        width: 1.66667rem;
+        height: 1.12rem;
+        top: 0.86667rem;
+        left: 2.53333rem;
+        z-index: 2;
+        opacity: .8;
+        background-image: url("../img/fdsf234df.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-iteration-count: 10; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_yuan {
+        padding-top: 0.13333rem; }
+        .app .app_con .app_middle .app_middle_con .app_middle_con_yuan .app_middle_con_yuan_con {
+          display: flex;
+          justify-content: space-around; }
+          .app .app_con .app_middle .app_middle_con .app_middle_con_yuan .app_middle_con_yuan_con .app_middle_con_yuan_con_li {
+            width: 0.16rem;
+            height: 0.16rem;
+            border-radius: 50%;
+            background: #ccc;
+            opacity: .2; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_title1 {
+        width: 1.93333rem;
+        height: 0.28rem;
+        background-image: url("../img/sdfsdf234sdfsd.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0.33333rem auto 0.26667rem; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_nubm {
+        width: 1.4rem;
+        height: 0.2rem;
+        background-image: url("../img/NO.5211314_49.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_logo {
+        width: 2.10667rem;
+        height: 2.01333rem;
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0.4rem auto 0.13333rem; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_fkr {
+        display: flex;
+        justify-content: center; }
+        .app .app_con .app_middle .app_middle_con .app_middle_con_fkr .app_middle_con_fkpeople {
+          width: 1.02667rem;
+          height: 0.28rem;
+          background-image: url("../img/fgs234dsf.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+        .app .app_con .app_middle .app_middle_con .app_middle_con_fkr .app_middle_con_fkr_con {
+          padding-top: 0.04rem;
+          padding-left: 0.2rem;
+          font-size: 0.26667rem;
+          font-weight: 400;
+          color: #666666;
+          line-height: 1.5;
+          line-height: 1; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_fjxx {
+        width: 3.73333rem;
+        height: 0.30667rem;
+        margin: 0.33333rem auto 0.26667rem;
+        background-image: url("../img/adfaf34df.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .app .app_con .app_middle .app_middle_con .app_middle_con_message {
+        width: 5.33333rem;
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        color: #444;
+        line-height: 2;
+        letter-spacing: 5px;
+        font-weight: 200;
+        margin: 0 auto; }
+  .app .app_con .app_qkzp {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.4rem; }
+    .app .app_con .app_qkzp .app_qkzp_left {
+      margin-top: 0.04rem;
+      width: 2.93333rem;
+      height: 0.82667rem;
+      background-image: url("../img/sfgfsd345sdfgsfg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .app .app_con .app_qkzp .app_qkzp_con {
+      display: block;
+      width: 3.62667rem;
+      height: 0.89333rem;
+      background-image: url("../img/sg3ssdfd.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-iteration-count: 2; }
+    .app .app_con .app_qkzp .app_qkzp_right {
+      margin-top: 0.04rem;
+      width: 2.93333rem;
+      height: 0.82667rem;
+      background-image: url("../img/sfdgsd345fsgsfg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .app .app_con .app_hdsm {
+    display: block;
+    width: 2.29333rem;
+    height: 0.54667rem;
+    margin: 0.53333rem auto 0;
+    background-image: url("../img/wdfsdf234sdfsdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .app .app_fixedBox {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .app .app_fixedBox.show {
+      z-index: 10;
+      opacity: 1; }
+    .app .app_fixedBox .app_fixedBox_con {
+      width: 8rem;
+      height: 9.33333rem;
+      border-radius: 0.13333rem;
+      background: #fff;
+      padding-top: 0.4rem; }
+      .app .app_fixedBox .app_fixedBox_con .app_fixedBox_yxwf {
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        text-align: center;
+        color: #000;
+        font-size: 0.48rem;
+        padding-top: 0.66667rem; }
+      .app .app_fixedBox .app_fixedBox_con .app_fixedBox_yxwf_con {
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        color: #666;
+        font-size: 0.32rem;
+        text-align: center;
+        padding-top: 0.26667rem; }
+      .app .app_fixedBox .app_fixedBox_con .app_fixedBox_mzsm {
+        text-align: center;
+        color: #000;
+        font-size: 0.48rem;
+        padding-top: 0.66667rem; }
+      .app .app_fixedBox .app_fixedBox_con .app_fixedBox_mzsm_con {
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        color: #666;
+        font-size: 0.32rem;
+        text-align: center;
+        padding-top: 0.26667rem; }
+      .app .app_fixedBox .app_fixedBox_con .app_fixedBox_ok {
+        cursor: pointer;
+        font-size: 0.26667rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 1.5;
+        color: #fff;
+        background: #ff9393;
+        text-align: center;
+        width: 4.73333rem;
+        height: 75;
+        line-height: 1rem;
+        font-size: 0.32rem;
+        margin: 2rem auto 0;
+        border-radius: 0.26667rem;
+        border: none;
+        outline: none; }
